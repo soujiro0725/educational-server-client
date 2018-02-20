@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  server:
+    build: server/
+    image: soichi777/c2server
+    ports:
+      - "7400:7400"
+      - "2222:22"
+
+  # client:
+  #   build: client/
+  #   image: soichi777/c2client
+  #   ports:
+  #     - "80:80"
